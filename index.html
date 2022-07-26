@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PASSWROD GENERATOR</title>
+</head>
+<body>
+    <div class="generator">
+        <h1 class="generator__title">Генератор пароля</h1>
+        <div class="generator__content">
+            <div id="password" class="generator__password"></div>
+            <div id="button" class="generator__button">
+                Сгенерировать
+            </div>
+            <div id="limitSymbols" class="generator__limit"></div>
+        </div>
+        <div class="generator__settings">
+            <div class="generator__settings-title">Настройки пароля</div>
+            <div class="generator__settings-content">
+                <div>
+                    <label class="generator__settings-name">Длина</label>
+                    <input 
+                    id="length" 
+                    type="number" 
+                    class="generator__settings-input"
+                    value="10"
+                    min="1"
+                    max="15"
+                    >       
+                </div>
+                <div class="generator__settings-title generator__setting-title-small">Включать в пароль:</div>
+                <div class="generator__settings-conteiner">
+                    <div>
+                        
+                        <label id ="uppercase"> 
+                            <input style="margin-right:5px;" type="checkbox">
+                             Заглавные 
+                        </label>
+                    </div>
+                    <div>
+                        <label id="numbers"> 
+                            <input style="margin-right:5px;" type="checkbox" >
+                            Числа
+                        </label>
+                    </div>
+                    <div>
+                        <label id="symbols">
+                            <input style="margin-right:5px;" type="checkbox">
+                            Спецсимволы
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="index.js"></script>
